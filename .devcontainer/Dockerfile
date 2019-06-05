@@ -3,7 +3,7 @@
 # Licensed under the MIT License. See LICENSE in the project root for license information.
 #-----------------------------------------------------------------------------------------
 
-FROM golang:1
+FROM anushregistry.azurecr.io/Kitchensink:latest
 
 RUN go get -u -v \
     github.com/mdempsky/gocode \
