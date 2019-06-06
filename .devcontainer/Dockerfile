@@ -5,7 +5,7 @@
 
 FROM golang:1
 
-FROM anushregistry.azurecr.io/kitchensink:latest
+FROM anushregistry.azurecr.io/kitchensink:2690327
 
 RUN go get -u -v \
     github.com/mdempsky/gocode \
