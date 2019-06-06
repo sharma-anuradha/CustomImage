@@ -29,7 +29,7 @@ RUN go get -x -d github.com/stamblerre/gocode \
     && mv gocode-gomod $GOPATH/bin/
 
 # Copy default endpoint specific user settings overrides into container to specify Go path
-COPY settings.vscode.json /root/.vscode-remote/data/Machine/settings.json
+COPY .devcontainer/settings.vscode.json /root/.vscode-remote/data/Machine/settings.json
 
 # Verify git, process tools installed
 RUN apt-get update && apt-get -y install git procps
