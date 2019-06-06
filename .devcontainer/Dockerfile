@@ -5,6 +5,8 @@
 
 FROM golang:1
 
+FROM anushregistry.azurecr.io/Kitchensink:latest
+
 RUN go get -u -v \
     github.com/mdempsky/gocode \
     github.com/uudashr/gopkgs/cmd/gopkgs \
